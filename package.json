@@ -1,0 +1,23 @@
+{
+  "name": "bookmarker",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./app/main.js",
+  "scripts": {
+    "start":"electron .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/angryparr0t/bookmarker.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/angryparr0t/bookmarker/issues"
+  },
+  "homepage": "https://github.com/angryparr0t/bookmarker#readme",
+  "devDependencies": {
+    "electron": "^35.2.1"
+  }
+}
