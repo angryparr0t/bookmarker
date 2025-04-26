@@ -2,28 +2,36 @@
 <html>
 
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <meta http-equiv="Content-Security-Policy" content="default-src 'self';
   script-src 'self' 'unsafe-inline';
   connect-src * 
-  ">
+  " />
     <title>Hello World!</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 
 <body>
-    <h1>Hello World!</h1>
-    We are using Node.js
+    <h1>Bookmarker</h1>
+    <div class="error-message"></div>
+    <section class="add-new-link">
+        <form class="new-link-form">
+            <input type="url" required size="100">
+            <!-- input 标签的 value 属性用于指定输入框的“值”，也就是内容。 -->
+            <input type="submit" class="add-link-btn" value="submit">
+        </form>
+    </section>
+    <section class="link-list"></section>
+    <section class="controler">
+        <button class="clear-list">Clear Storage</button>
+    </section>
     <script>
-        document.write(process.versions.node)
-    </script>,
-    Chrome
-    <script>
-        document.write(process.versions.chrome)
-    </script>,
-    and Electron
-    <script>
-        document.write(process.versions.electron)
-    </script>.
+        require('./renderer.js')
+        // const button = document.querySelector('.alert')
+        // button.addEventListener('click', () => {
+        //     alert(__dirname)
+        // })
+    </script>
 </body>
 
 </html>
